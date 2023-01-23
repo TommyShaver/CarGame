@@ -5,12 +5,7 @@ using UnityEngine;
 public class BoxFloaT : MonoBehaviour
 {
     private const float blockSpeed = 2.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+  
     // Update is called once per frame
     void Update()
     {
