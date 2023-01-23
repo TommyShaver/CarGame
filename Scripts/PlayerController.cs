@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Public floats
-    public float speed = 5.0f;
-    public float turnSpeed;
+    [SerializeField] float speed = 5.0f;
+    [SerializeField] float turnSpeed;
     public Camera mainCamera;
     public Camera hoodCamera;
     public KeyCode switchkey;
@@ -15,15 +15,9 @@ public class PlayerController : MonoBehaviour
     //private floats
     private float horzontalInput;
     private float verticalIntput;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-   
-    }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Player contorl input
         horzontalInput = Input.GetAxis("Horizontal" + inputID);

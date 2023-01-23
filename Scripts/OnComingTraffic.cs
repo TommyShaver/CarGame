@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class OnComingTraffic : MonoBehaviour
 {
-    public float busSpeed;
-    void Start()
-    {
-        
-    }
-
+    [SerializeField] float busSpeed;
+ 
     // Update is called once per frame
     void Update()
     {
